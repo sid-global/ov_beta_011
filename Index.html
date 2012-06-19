@@ -1,0 +1,553 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+<link href="ccs/jquery-mobile/jquery.mobile-1.0a3.min.css" rel="stylesheet" type="text/css">
+<script src="ccs/jquery-mobile/jquery-1.5.min.js" type="text/javascript"></script>
+<script src="ccs/jquery-mobile/jquery.mobile-1.0a3.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+<!-- Menu -->
+<div data-role="page" id="inicio">
+  <div data-role="header">
+    <center>
+        <img src="images/Overture Realtor Tab.jpg" width="410" height="61" align="middle">
+      </center>
+  </div>
+  <div data-role="content">
+  	<ul data-role="listview" data-inset="true">
+      <li data-role="list-divider" role="heading"></li>
+      <li><a href="#Listado_zonas"><img src="images/Shopping_Cart.png" width="64" height="64">Propiedades</a></li>
+      <li><a href="#"><img src="images/Users_Chat.png" width="64" height="64">Mis Solicitudes</a></li>
+      <li><a href="#"><img src="images/Users_Group.png" width="64" height="64">Corredores Asociados</a></li>
+      <li><a href="#buscar_propiedades"><img src="images/Search.png" width="64" height="64">Buscar Propiedades</a></li>
+      <li><a href="#"><img src="images/Tag_add.png" width="64" height="64">Ingresar Propiedad/Solicitud</a></li>
+      <li><a href="#"><img src="images/Chat.png" width="64" height="64">Mensajes</a></li>
+      <li data-role="list-divider" role="heading"></li>
+    </ul>
+  </div>
+</div>
+
+<!------- Menu -->
+
+<!-- Buscar Propiedades -->
+<div data-role="page" id="buscar_propiedades">
+  <div data-role="header">
+    <center>
+        <img src="images/Overture Realtor Tab.jpg" width="410" height="61" align="middle">
+      </center>
+  </div>
+  <ul data-role="listview">
+      <li data-role="list-divider" role="heading">Encuentra tu Inmueble</li>
+  </ul>
+  <div data-role="content">
+  
+    <label for="selectmenu" class="select">Tipo de inmueble:</label>
+    <select name="selectmenu" id="selectmenu" data-theme="a">
+      <option value="option1">Todos</option>
+      <option value="option2">Apartamento</option>
+      <option value="option3">Casa</option>
+      <option value="option4">Edificio</option>
+    </select>
+    
+    <label for="selectmenu2" class="select">Estado:</label>
+    <select name="selectmenu2" id="selectmenu2" data-theme="a">
+      <option value="option1">Todos</option>
+      <option value="option2">Distrito Capital</option>
+      <option value="option3">Miranda</option>
+    </select>
+    
+    <label for="slider">Precio en Bs.F.:</label>
+    <input type="range" name="slider" id="slider" value="100000" min="100000" max="700000" data-theme="a"/>
+
+    <label for="slider2">Superficie en m2:</label>
+    <input type="range" name="slider2" id="slider2" value="100" min="20" max="1000" data-theme="a"/>
+    
+    <label for="slider2">Habitaciones:</label>
+    <input type="range" name="slider3" id="slider3" value="3" min="1" max="6" data-theme="a"/>
+    
+  	<a href="#" data-role="button" data-theme="a">Buscar</a>
+  </div>
+</div>
+<!------- Buscar Propiedades -->
+
+<!-- Listado de Zonas -->
+<div data-role="page" id="Listado_zonas">
+  <div data-role="header">
+    <center>
+        <img src="images/Overture Realtor Tab.jpg" width="410" height="61" align="middle">
+      </center>
+  </div>
+  <div data-role="content">
+    <ul data-role="listview">
+      <li data-theme="b" data-role="list-divider" role="heading">Propiedades - Zona</li>
+      <li><a href="#DC">Distrito Capital</a></li>
+      <li><a href="#MI">Miranda</a></li>
+      <li><a href="#">Vargas</a></li>
+      <li data-role="list-divider" role="heading"></li>
+    </ul>
+  
+  </div>
+</div>
+<!------- Listado de Zonas -->
+
+<!-- Listado inmuebles DC -->
+<div data-role="page" id="DC">
+  <div data-role="header">
+      <center>
+        <img src="images/Overture Realtor Tab.jpg" width="410" height="61" align="middle">
+      </center>
+  </div>
+  <div data-role="content">
+    <ul data-role="listview" data-inset="true">
+      <li data-theme="b" data-role="list-divider" role="heading">Propiedades - Distrito Capital</li>
+      <li><img src="images/baruta1.jpg" width="374" height="500">
+        <h3><a href="#Apto_1">Apartamento en Venta</a></h3>
+        <p>Santa Fé - Norte</p>
+        <p>Pedro Martínez</p>
+        <p>BsF 2.200.000</p>
+      </li>
+      <li><img src="images/baruta2.jpg" width="500" height="374">
+        <h3><a href="#Apto_2">Apartamento en Venta</a></h3>
+        <p>Santa Fé - Norte</p>
+        <p>José López</p>
+        <p>BsF 2.300.000</p>
+      </li>
+      <li><img src="images/baruta3.jpg" width="500" height="374">
+        <h3><a href="#Apto_3">Apartamento en Venta</a></h3>
+        <p>Santa Fé - Norte</p>
+        <p>Ana Rodríguez</p>
+        <p>BsF 2.800.000</p>
+      </li>
+      <li data-role="list-divider" role="heading"></li>
+    </ul>
+  
+  </div>
+</div>
+
+<!------- Listado inmuebles DC -->
+
+<!-- Listado inmuebles Miranda -->
+<div data-role="page" id="MI">
+  <div data-role="header">
+      <center>
+        <img src="images/Overture Realtor Tab.jpg" width="410" height="61" align="middle">
+      </center>
+  </div>
+  <div data-role="content">
+    <ul data-role="listview" data-inset="true">
+      <li data-theme="b" data-role="list-divider" role="heading">Propiedades - Miranda</li>
+      <li><img src="images/mi1.jpg" width="374" height="500">
+        <h3><a href="#Apto_mi_1">Apartamento en Venta</a></h3>
+        <p>Guarenas - La Vaquera</p>
+        <p>Pedro Martínez</p>
+        <p>BsF 670.000</p>
+      </li>
+      <li><img src="images/mi2.jpg" width="500" height="374">
+        <h3><a href="#Apto_mi_2">Apartamento en Venta</a></h3>
+        <p>Guarenas - Izcaragua</p>
+        <p>José López</p>
+        <p>BsF 830.000</p>
+      </li>
+      <li><img src="images/mi3.jpg" width="500" height="374">
+        <h3><a href="#Apto_mi_3">Apartamento en Venta</a></h3>
+        <p>Guarenas - La Vaquera</p>
+        <p>Ana Rodríguez</p>
+        <p>BsF 650.000</p>
+      </li>
+      <li><img src="images/mi4.jpg" width="374" height="500">
+        <h3><a href="#Apto_mi_4">Apartamento en Venta</a></h3>
+        <p>Guarenas - Nueva Casarapa</p>
+        <p>Pedro Martínez</p>
+        <p>BsF 545.000</p>
+      </li>
+      <li><img src="images/mi5.jpg" width="500" height="374">
+        <h3><a href="#Apto_mi_5">Apartamento en Venta</a></h3>
+        <p>Guarenas - Tzas. de Mapote</p>
+        <p>José López</p>
+        <p>BsF 1.800.000</p>
+      </li>
+      <li><img src="images/mi6.jpg" width="500" height="374">
+        <h3><a href="#Apto_mi_6">Apartamento en Venta</a></h3>
+        <p>Guarenas </p>
+        <p>Ana Rodríguez</p>
+        <p>BsF 935.000</p>
+      </li>
+      <li data-role="list-divider" role="heading"></li>
+    </ul>
+  </div>
+</div>
+
+<!------- Listado inmuebles Miranda -->
+
+<!-- Apartamento 1 -->
+<div data-role="page" id="Apto_1">
+  <div data-role="header">
+    <center>
+        <img src="images/Overture Realtor Tab.jpg" width="410" height="61" align="middle">
+      </center>
+  </div>
+  <div data-role="content">
+    <div data-role="collapsible-set" data-theme="a">
+      <div data-role="collapsible" data-theme="a">
+        <h3>Información del Inmueble</h3>
+        <div class="ui-grid-a">
+          <div class="ui-block-a">Baños:  				2</div>
+          <div class="ui-block-b">Mts Construcción:  	130</div>
+          <div class="ui-block-a">Habitaciones:  		3</div>
+          <div class="ui-block-b">Baño de servicio:  	1</div>
+          <div class="ui-block-a">Antigüedad:  			20</div>
+          <div class="ui-block-b">Estacionemientos:  	2</div>
+          <div class="ui-block-a">Hab. de Servicio:  	1</div>
+          <div class="ui-block-b">Nombre del edificio:  xxx</div>
+        </div>
+      </div>
+      <div data-role="collapsible" data-collapsed="true" data-theme="a">
+        <h3>Información del Corredor</h3>
+        <div class="ui-grid-a">
+          <div>Corredor:  Pedro Martínez</div>
+          <div>Teléfono:  0416-2252255</div>
+          <div>Email:  	 p.martinez@gmail.com</div>
+        </div>
+      </div>
+      <div data-role="collapsible" data-collapsed="true" data-theme="a">
+        <h3>Fotos del Inmueble</h3>
+        <div class="ui-grid-b">
+          <div class="ui-block-a"><img src="images/baruta1.jpg" width="94" height="125"></div>
+          <div class="ui-block-b"><img src="images/baruta1_1.jpg" width="125" height="93"></div>
+          <div class="ui-block-c"><img src="images/baruta1_2.jpg" width="125" height="93"></div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<!------- Apartamento 1 -->
+
+<!-- Apartamento 2 -->
+<div data-role="page" id="Apto_2">
+  <div data-role="header">
+    <center>
+        <img src="images/Overture Realtor Tab.jpg" width="410" height="61" align="middle">
+      </center>
+  </div>
+  <div data-role="content">
+    <div data-role="collapsible-set">
+      <div data-role="collapsible" data-theme="a">
+        <h3>Información del Inmueble</h3>
+        <div class="ui-grid-a">
+          <div class="ui-block-a">Baños:  				3</div>
+          <div class="ui-block-b">Mts Construcción:  	111</div>
+          <div class="ui-block-a">Habitaciones:  		2</div>
+          <div class="ui-block-b">Baño de servicio:  	1</div>
+          <div class="ui-block-a">Antigüedad:  			12</div>
+          <div class="ui-block-b">Estacionemientos:  	3</div>
+          <div class="ui-block-a">Hab. de Servicio:  	1</div>
+          <div class="ui-block-b"></div>
+        </div>
+      </div>
+      <div data-role="collapsible" data-collapsed="true" data-theme="a">
+        <h3>Información del Corredor</h3>
+        <div class="ui-grid-a">
+          <div>Corredor:  José López</div>
+          <div>Teléfono:  0414-2252255</div>
+          <div>Email:  	  j.lopez@gmail.com</div>
+        </div>
+      </div>
+      <div data-role="collapsible" data-collapsed="true" data-theme="a">
+        <h3>Fotos del Inmueble</h3>
+        <div class="ui-grid-b">
+          <div class="ui-block-a"><img src="images/baruta2.jpg" width="94" height="125"></div>
+          <div class="ui-block-b"><img src="images/baruta2_1.jpg" width="125" height="93"></div>
+          <div class="ui-block-c"><img src="images/baruta2_2.jpg" width="125" height="93"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!------- Apartamento 2 -->
+
+<!-- Apartamento 3 -->
+<div data-role="page" id="Apto_3">
+  <div data-role="header">
+    <center>
+        <img src="images/Overture Realtor Tab.jpg" width="410" height="61" align="middle">
+      </center>
+  </div>
+  <div data-role="content">
+    <div data-role="collapsible-set">
+      <div data-role="collapsible" data-theme="a">
+        <h3>Información del Inmueble</h3>
+        <div class="ui-grid-a">
+          <div class="ui-block-a">Baños:  				2</div>
+          <div class="ui-block-b">Mts Construcción:  	170</div>
+          <div class="ui-block-a">Habitaciones:  		3</div>
+          <div class="ui-block-b">Baño de servicio:  	1</div>
+          <div class="ui-block-a">Antigüedad:  			15</div>
+          <div class="ui-block-b">Estacionemientos:  	2</div>
+          <div class="ui-block-a">Hab. de Servicio:  	1</div>
+          <div class="ui-block-b">Nombre del edificio:  11-2353</div>
+          <div class="ui-block-b"></div>
+        </div>
+      </div>
+      <div data-role="collapsible" data-collapsed="true" data-theme="a">
+        <h3>Información del Corredor</h3>
+        <div class="ui-grid-a">
+          <div>Corredor:  Ana Rodríguez</div>
+          <div>Teléfono:  0412-2252255</div>
+          <div>Email:  	  a.rodriguez@gmail.com</div>
+        </div>
+      </div>
+      <div data-role="collapsible" data-collapsed="true" data-theme="a">
+        <h3>Fotos del Inmueble</h3>
+        <div class="ui-grid-b">
+          <div class="ui-block-a"><img src="images/baruta3.jpg" width="94" height="125"></div>
+          <div class="ui-block-b"><img src="images/baruta3_1.jpg" width="125" height="93"></div>
+          <div class="ui-block-c"><img src="images/baruta3_2.jpg" width="125" height="93"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!------- Apartamento 3 -->
+
+<!-- Apartamento 4 -->
+<div data-role="page" id="Apto_mi_1">
+  <div data-role="header">
+    <center>
+        <img src="images/Overture Realtor Tab.jpg" width="410" height="61" align="middle">
+      </center>
+  </div>
+  <div data-role="content">
+    <div data-role="collapsible-set">
+      <div data-role="collapsible" data-theme="a">
+        <h3>Información del Inmueble</h3>
+        <div class="ui-grid-a">
+          <div class="ui-block-a">Baños:  				2</div>
+          <div class="ui-block-b">Mts Construcción:  	85</div>
+          <div class="ui-block-a">Habitaciones:  		3</div>
+          <div class="ui-block-b">Baño de servicio:  	No tiene</div>
+          <div class="ui-block-a">Antigüedad:  			10</div>
+          <div class="ui-block-b">Estacionemientos:  	2</div>
+          <div class="ui-block-a">Hab. de Servicio:  	No tiene</div>
+          <div class="ui-block-b">Nombre del edificio:  Riveras De Izcaragua</div>
+        </div>
+      </div>
+      <div data-role="collapsible" data-collapsed="true" data-theme="a">
+        <h3>Información del Corredor</h3>
+        <div class="ui-grid-a">
+          <div>Corredor:  Pedro Martínez</div>
+          <div>Teléfono:  0416-2252255</div>
+          <div>Email:  	 p.martinez@gmail.com</div>
+        </div>
+      </div>
+      <div data-role="collapsible" data-collapsed="true" data-theme="a">
+        <h3>Fotos del Inmueble</h3>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!------- Apartamento 4 -->
+
+<!-- Apartamento 5 -->
+<div data-role="page" id="Apto_mi_2">
+  <div data-role="header">
+    <center>
+        <img src="images/Overture Realtor Tab.jpg" width="410" height="61" align="middle">
+      </center>
+  </div>
+  <div data-role="content">
+  	<div data-role="collapsible-set">
+      <div data-role="collapsible" data-theme="a">
+        <h3>Información del Inmueble</h3>
+        <div class="ui-grid-a">
+          <div class="ui-block-a">Baños:  				2</div>
+          <div class="ui-block-b">Mts Construcción:  	114</div>
+          <div class="ui-block-a">Habitaciones:  		3</div>
+          <div class="ui-block-b">Baño de servicio:  	No tiene</div>
+          <div class="ui-block-a">Antigüedad:  			4</div>
+          <div class="ui-block-b">Estacionemientos:  	1</div>
+          <div class="ui-block-a">Hab. de Servicio:  	No tiene</div>
+          <div class="ui-block-b">Nombre del edificio:  Riberas de Izcaragua </div>
+        </div>
+      </div>
+      <div data-role="collapsible" data-collapsed="true" data-theme="a">
+        <h3>Información del Corredor</h3>
+        <div class="ui-grid-a">
+          <div>Corredor:  Pedro Martínez</div>
+          <div>Teléfono:  0416-2252255</div>
+          <div>Email:  	 p.martinez@gmail.com</div>
+        </div>
+      </div>
+      <div data-role="collapsible" data-collapsed="true" data-theme="a">
+        <h3>Fotos del Inmueble</h3>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!------- Apartamento 5 -->
+
+<!-- Apartamento 6 -->
+<div data-role="page" id="Apto_mi_3">
+  <div data-role="header">
+    <center>
+        <img src="images/Overture Realtor Tab.jpg" width="410" height="61" align="middle">
+      </center>
+  </div>
+  <div data-role="content">
+    <div data-role="collapsible-set">
+      <div data-role="collapsible" data-theme="a">
+        <h3>Información del Inmueble</h3>
+         <div class="ui-grid-a">
+          <div class="ui-block-a">Baños:  				2</div>
+          <div class="ui-block-b">Mts Construcción:  	80</div>
+          <div class="ui-block-a">Habitaciones:  		3</div>
+          <div class="ui-block-b">Baño de servicio:  	No tiene</div>
+          <div class="ui-block-a">Antigüedad:  			10</div>
+          <div class="ui-block-b">Estacionemientos:  	1</div>
+          <div class="ui-block-a">Hab. de Servicio:  	No tiene</div>
+          <div class="ui-block-b">Nombre del edificio:  Riberas de Izcaragua </div>
+        </div>
+      </div>
+      <div data-role="collapsible" data-collapsed="true" data-theme="a">
+        <h3>Información del Corredor</h3>
+        <div class="ui-grid-a">
+          <div>Corredor:  Pedro Martínez</div>
+          <div>Teléfono:  0416-2252255</div>
+          <div>Email:  	 p.martinez@gmail.com</div>
+        </div>
+      </div>
+      <div data-role="collapsible" data-collapsed="true" data-theme="a">
+        <h3>Fotos del Inmueble</h3>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!------- Apartamento 6 -->
+
+<!-- Apartamento 7 -->
+<div data-role="page" id="Apto_mi_4">
+  <div data-role="header">
+    <center>
+        <img src="images/Overture Realtor Tab.jpg" width="410" height="61" align="middle">
+      </center>
+  </div>
+  <div data-role="content">
+    <div data-role="collapsible-set">
+      <div data-role="collapsible" data-theme="a">
+        <h3>Información del Inmueble</h3>
+        <div class="ui-grid-a">
+          <div class="ui-block-a">Baños:  				2</div>
+          <div class="ui-block-b">Mts Construcción:  	74</div>
+          <div class="ui-block-a">Habitaciones:  		3</div>
+          <div class="ui-block-b">Baño de servicio:  	No tiene</div>
+          <div class="ui-block-a">Antigüedad:  			12</div>
+          <div class="ui-block-b">Estacionemientos:  	1</div>
+          <div class="ui-block-a">Hab. de Servicio:  	No tiene</div>
+        </div>
+      </div>
+      <div data-role="collapsible" data-collapsed="true" data-theme="a">
+        <h3>Información del Corredor</h3>
+        <div class="ui-grid-a">
+          <div>Corredor:  Pedro Martínez</div>
+          <div>Teléfono:  0416-2252255</div>
+          <div>Email:  	 p.martinez@gmail.com</div>
+        </div>
+      </div>
+      <div data-role="collapsible" data-collapsed="true" data-theme="a">
+        <h3>Fotos del Inmueble</h3>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!------- Apartamento 7 -->
+
+<!-- Apartamento 8 -->
+<div data-role="page" id="Apto_mi_5">
+  <div data-role="header">
+    <center>
+        <img src="images/Overture Realtor Tab.jpg" width="410" height="61" align="middle">
+      </center>
+  </div>
+  <div data-role="content">
+	<div data-role="collapsible-set">
+      <div data-role="collapsible" data-theme="a">
+        <h3>Información del Inmueble</h3>
+        <div class="ui-grid-a">
+          <div class="ui-block-a">Baños:  				3</div>
+          <div class="ui-block-b">Mts Construcción:  	230</div>
+          <div class="ui-block-a">Habitaciones:  		3</div>
+          <div class="ui-block-b">Baño de servicio:  	No tiene</div>
+          <div class="ui-block-a">Antigüedad:  			10</div>
+          <div class="ui-block-b">Estacionemientos:  	2</div>
+          <div class="ui-block-a">Hab. de Servicio:  	No tiene</div>
+          <div class="ui-block-b">Nombre del edificio:  - </div>
+        </div>
+      </div>
+      <div data-role="collapsible" data-collapsed="true" data-theme="a">
+        <h3>Información del Corredor</h3>
+        <div class="ui-grid-a">
+          <div>Corredor:  Pedro Martínez</div>
+          <div>Teléfono:  0416-2252255</div>
+          <div>Email:  	 p.martinez@gmail.com</div>
+        </div>
+      </div>
+      <div data-role="collapsible" data-collapsed="true" data-theme="a">
+        <h3>Fotos del Inmueble</h3>
+      </div>
+    </div>  
+  </div>
+</div>
+
+<!------- Apartamento 8 -->
+
+<!-- Apartamento 9 -->
+<div data-role="page" id="Apto_mi_6">
+  <div data-role="header">
+    <center>
+        <img src="images/Overture Realtor Tab.jpg" width="410" height="61" align="middle">
+      </center>
+  </div>
+  <div data-role="content">
+    <div data-role="collapsible-set">
+      <div data-role="collapsible" data-theme="a">
+        <h3>Información del Inmueble</h3>
+        <div class="ui-grid-a">
+          <div class="ui-block-a">Baños:  				3</div>
+          <div class="ui-block-b">Mts Construcción:  	143</div>
+          <div class="ui-block-a">Habitaciones:  		3</div>
+          <div class="ui-block-b">Baño de servicio:  	No tiene</div>
+          <div class="ui-block-a">Antigüedad:  			11</div>
+          <div class="ui-block-b">Estacionemientos:  	2</div>
+          <div class="ui-block-a">Hab. de Servicio:  	No tiene</div>
+          <div class="ui-block-b">Nombre del edificio:  Res. Puerta Real </div>
+        </div>
+      </div>
+      <div data-role="collapsible" data-collapsed="true" data-theme="a">
+        <h3>Información del Corredor</h3>
+        <div class="ui-grid-a">
+          <div>Corredor:  Pedro Martínez</div>
+          <div>Teléfono:  0416-2252255</div>
+          <div>Email:  	 p.martinez@gmail.com</div>
+        </div>
+      </div>
+      <div data-role="collapsible" data-collapsed="true" data-theme="a">
+        <h3>Fotos del Inmueble</h3>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!------- Apartamento 9 -->
+
+</body>
+</html>
